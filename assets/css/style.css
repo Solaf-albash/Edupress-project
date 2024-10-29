@@ -1,0 +1,1104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+}
+/*header */
+header{
+    width: 100%;
+}
+/* nav  */
+
+nav{ 
+    height: 72px;
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    ul{ 
+        height: 72px;
+        display: flex;
+        justify-content: space-between;
+        gap: 23px;
+        font-size: 16px;
+        font-weight: 600;
+        list-style: none;
+        text-wrap: nowrap;
+        li{
+            padding-top: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 100%;
+            i{
+            font-size: 12px;
+            padding-top: 5px;
+            padding-left: 2px;
+        }
+        
+        }
+        
+        
+    }
+
+}
+
+
+/* icon for Edupress used in nav and footer */
+.EduPress{
+    width: 166.3px;
+    height: 30px;
+    display: flex;
+    gap: 5px;
+    
+}
+/* class used in( nav (home)) */
+.active{
+background-color:#F5F5F5;
+}
+.active a{
+    color: #FF782D;
+}
+/* hover in nav  */
+nav  ul  li:hover a{
+    color: #FF782D;
+}
+
+/* class used in nav  */
+.search{
+    color:black;
+    min-width: 198px;
+    display: flex;
+    align-items:center ;
+    gap: 20px;
+    text-wrap: nowrap;
+    h6 , h6 a{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    i{  
+        color: #FF782D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #FF782D;    
+    }
+}
+nav .search a:hover {
+    color: #FF782D;
+}
+/* bars */
+.bars{display: none;}
+
+/* hero in header */
+.hero{
+    height:calc(100vh - 72px);
+    background-image: url(./../images/backgroud.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+} 
+/* class used in hero and other section(learnpress) */
+.title{
+    max-width: 510px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{ 
+        font-size: 48px;
+        font-weight: 600px;
+    }
+}
+
+
+p{
+    font-size: 17px;
+    color: #555555;
+}
+/* button */
+.button{
+    width: 170px;
+    height: 48px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 24px;
+    border: none;
+    background-color: #FF782D;
+    cursor: pointer;
+}
+
+/* class used in first section */
+.Top-Categories{
+    padding: 50px 70px;
+}
+
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    line-height: 27px;
+}
+.button-section{
+    border: 2px solid gray;
+    background-color: white;
+    color: black;
+}
+
+.group-card{
+    padding: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.end-button-section{
+    display: none;
+}
+.group-card .card{
+    width: 234px;
+    height: 234px;
+    border: 1px solid #EAEAEA;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    .i{
+        font-size: 30px;
+    }
+}
+
+.Top-Categories .card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.Top-Categories .card:hover h3{
+    color: #FF782D;
+}
+
+/* class used in icon from fontawesome */
+.i{
+    color: #FF782D;
+    font-size: 12px;
+    padding-top: 5px;
+}
+/* class used in  section tow  */
+.Featured-courses{
+    margin: 0 auto;
+    padding: 50px 70px 0px 70px ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.g-cards-featured{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+.card-featured{ 
+    max-width: 380px;
+    border: 1px solid #EAEAEA;
+    border-radius: 24px;
+    .img-card{
+        position: relative;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+        .photography{
+            width: 114px;
+            height: 40px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: black;
+            font-weight: 500;
+            border-radius: 8px;
+            padding-top: 8px;
+            
+            p{
+                text-align: center;
+                color: white;
+            }
+        }
+    }
+}
+
+/* class used in section-2 for the text following the image */
+.card-featured .contain{
+    max-width: 385px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    line-height: 24px;
+    div{
+        display: flex;
+        gap: 5px;
+    }
+    .bold{
+        color: black;
+        font-weight: 600;
+    }
+    .details{
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 24px;
+        border-bottom: 1px  solid #EAEAEA;
+    }
+    .dolar{
+        text-decoration: line-through;
+        color: #9D9D9D;
+    }
+    span{
+        color: #55BE24;
+    }
+    .end-card{
+        display: flex;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+        }
+    }
+
+}
+
+/*class used in section three  */
+.LearnPress{
+    padding: 50px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+
+    .bacground-learnpress{
+        background-image: url(./../images/bac-gr-se3.png);
+        background-size: 100% 100%;
+        height: 324px;
+        padding-left: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-repeat: no-repeat;
+        .cont-learnpress{
+            max-width: 490px;
+
+        }
+
+    }
+}
+
+/* class used in section four */
+.group-card-counter{
+    padding: 50px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+}
+.counter-box{
+    .counter{
+        width: 284px;
+        height: 161px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 30px;
+        background-color:#F5F5F5;
+        .number{
+            padding-bottom: 10px;
+            color: #FF782D;
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+}
+
+/*class used in section  five */
+.grow-us{
+    padding: 50px 70px;
+    display: flex;
+    gap:125px;
+    justify-content: space-between;
+    img{
+        width: 100%;
+    }
+    .cont-grow-us{
+        padding-top: 40px;
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        ul{ 
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            gap: 12px;
+            i{
+                color: #55BE24;
+                padding-right: 3px;
+            }
+        }
+    }
+
+}
+
+/* class used in section sex */
+.academy-lms{ 
+    margin-bottom: 70px;
+    padding: 50px 70px;
+    .bacground-academy{
+    height: 250px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background-image: url(./../images/banner2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .student{
+        display: flex;
+        gap: 30px;       
+        .img-student{ 
+            width: 120px;
+            height: 120px;
+            background-color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h4{
+            display: flex;
+            align-items: center;
+        }
+        
+        }
+        .buttons{
+            display: flex;
+            gap: 20px;
+        }
+        .button-academy1{
+            width: 170px;
+            height: 48px;
+            background-color: transparent;
+            color: #FF782D;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 24px;
+            border: 1px solid #FF782D;
+            cursor: pointer;
+        }
+        .button-academy2{
+            width: 219px;
+        }
+    } 
+}
+
+/*class used in footer  */
+footer{
+    width: 100%;
+    padding: 50px 70px;
+    margin-top: 0px;
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .end-footar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:50px ;
+        padding-bottom: 50px;
+
+    }
+    
+}
+.upper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .Lorem{
+        max-width:341px ;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .get-help{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .programs{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+.programs ul, .get-help ul{
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+        
+        list-style: none;
+        a{
+            color: #555555;
+            text-decoration: none;  
+        }
+        }
+    .programs ul li a:hover{
+        color: #FF782D;
+    }
+    .get-help ul li a:hover{
+        color: #FF782D;
+    }
+
+    .contact-us{
+        max-width: 340px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .social-media{
+            ul{
+                display: flex;
+                list-style:none;
+                gap: 12px;
+                a{
+                    color: #555555;
+                }
+                
+                
+            }
+        }
+    }
+    .contact-us .social-media li a:hover{
+        color: #FF782D;
+    }
+}
+
+/*========================================= page-courses========================================= */
+.p-dark-gray{
+    color: #555555;
+}
+.p-gray{
+    color: #9D9D9D;
+}
+.hero-courses{
+    padding: 18px 70px;
+    background-color: #F5F5F5;
+    display: flex;
+    gap: 8px;
+        i{
+            padding: 4px 4px;
+            font-size: 14px;
+        }
+}
+
+.Featured-page-courses{
+    .top-section-courses{
+        justify-content: space-between;
+        display: flex;
+        .input{
+            border: none;
+            width: 270px;
+            
+        } 
+        .group-search-courses{
+        display: flex;
+        gap: 15px;
+        }
+        .search-courses{
+        border-bottom: 1px solid black;
+        }
+    }
+}
+
+.list-number{
+    padding:50px 70px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .g-item-list{
+        display: flex;
+        list-style: none;
+        gap:12px ;
+    }
+        li{
+        color: black;
+        font-weight: 500;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border:1px solid #EAEAEA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+}
+
+.list-number .g-item-list li:hover{
+    color: white;
+    background-color: black;
+}
+ /* =========================================page-article========================================= */
+.Featured-page-articl{
+    .g-cards-featured{
+        .card-featured{
+            .contain{
+                .details{
+                    border-bottom: none;
+                    .i{
+                        padding-top: 3px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =========================================page-contact========================================= */
+.page-Contact{
+    padding: 50px 70px;
+    .container-contact{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-left{
+        max-width: 410px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .cont-container-left{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .information-contact{
+                height: 56px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }   
+            .phone-number , .email{
+                display: flex;
+                gap: 20px;
+            }
+
+            .bold{
+                font-weight: 600;
+                color:black;
+            }
+                
+            .icon-contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 8px;
+            background-color: #F5F5F5;
+            color:#FF782D ;
+            } 
+            
+        }
+    }
+    .container-right{
+        max-width: 60vw;
+    .map{
+        max-width: 100%;
+        border-radius: 20PX;
+        }
+    } 
+    
+}
+
+.inputs-contact{
+        padding:0px 70px;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .g-inputs-contact{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .input-email-name{
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            
+        }
+        .input{
+            width: 44vw;
+            height: 48px;
+            padding: 10px 16px;
+            border-radius: 7px;
+            border: 1px solid #9D9D9D;
+        }
+        .input-com{
+            width: 90vw;
+            height: 110px;
+            border-radius: 7px;
+            padding:10px 16px;
+            display: flex;
+            align-items: start;
+            border: 1px solid #9D9D9D;
+            resize: none;
+        }
+}
+
+.check-box{
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 6PX;
+}
+#save{
+    accent-color:#ff782d;
+
+}
+
+/* =======================================page-login/Regester======================================== */
+.g-inputs-login-Register{
+    padding: 50PX 70PX;
+    display: flex;
+    justify-content: space-between;
+    gap: 30PX;
+    
+    .input-left{
+        width: 43.92VW;
+        height: 406PX;
+        padding: 30px 30px 30px 30px;
+        border-radius: 20px;
+        border: 1px solid #9D9D9D;
+        display: flex;
+        flex-direction: column;
+        gap: 30PX;
+    }
+    .input-checkbox{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        }
+    .input-pass-email{
+        display: flex;
+        flex-direction: column;
+        gap: 20PX;       
+        }
+        .pass-box{
+            display: flex;
+            position: relative;
+            button{
+                position: absolute;
+                right: 20px;
+                top: 15px;
+                border: 0;
+                font-size: 15px;
+                background-color: white;
+                cursor: pointer;
+                color: #9D9D9D;
+            }
+        }    
+
+    .input-login-Register{
+        width: 100%;
+        height: 48PX;
+        border-radius: 8PX;
+        padding: 10PX 16PX;
+        border: 1PX solid #9D9D9D;
+        }
+        }
+        .submit-login{
+            width:100%;
+            height: 48px;
+            color: white;
+            background-color: #FF782D;
+            border-radius: 24px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 24px;
+            border: none;
+        }
+        .lost-password{
+            text-decoration: none;
+            p{
+                color: black;
+            }
+        }
+        .input-right{
+            width: 43.92VW;
+            height: 448PX;
+            padding: 30px 30px 30px 30px;
+            border-radius: 20px;
+            border: 1px solid #9D9D9D;
+            display: flex;
+            flex-direction: column;
+            gap: 30PX;
+        }
+/* =======================================page-FAQs======================================== */
+.faqs-page{
+    padding: 50px 70px;
+    .g-boxes-faqs{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .boxes-left{
+        width: 44.2vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .box-faqs{
+        width: 100%;
+        height: 64px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F5F5F5;
+        border-radius: 8px;
+        i{
+            color: #9D9D9D;
+        }
+    }
+    .box-special{
+        width: 100%;
+        min-height: 192px;
+        background-color: #f5f5f5;
+        align-items: center;
+        padding: 20px 30px;
+        border-radius: 8px;
+        .title-faqs{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            i{
+                color: #9D9D9D;
+            }
+            h5{
+                color: #FF782D;
+                }
+        }
+    }
+    .boxes-right{
+        width: 44.2vw;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    
+}
+
+.img-FAQs{
+    padding: 50px 70px 0px 70px;
+}
+
+.img-faqs-mobil{
+    display: none;
+}
+
+@media screen and (max-width :1024px)
+{
+nav{
+    height: 90PX;
+    padding: 30PX 20PX;
+}
+nav ul, nav .search{ display : none;} 
+
+nav .bars{
+    display : block;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    background-image: url(./../images/background-mob.png);
+    padding: 0PX 0PX 0PX 0PX;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.title{
+    h1{
+        font-size: 32px;
+        font-weight: 600px;
+        line-height: 38.4px;
+        
+    }
+    .button{
+    margin: 0 auto;
+    }
+}
+
+p{
+    font-size: 15px;
+    padding-top:10px;
+}
+
+.Top-Categories{
+    padding:70px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-Categories h1 { 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.top-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i{
+    padding-top: 15px;
+}
+
+.button-section{
+display: none;
+}
+a{
+    text-decoration: none;
+}
+.end-button-section{
+    display: block;
+}
+.group-card{
+    padding-left: 0px;
+    padding-right: 0px; 
+}
+
+.Featured-courses{
+    padding:70px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-featured{
+    .img-card{
+        .photography{
+            padding-top: 0px;
+        }
+    }
+}
+.card-featured .contain{
+    width: 90%;  
+    .end-card{
+        justify-content: space-between;
+    }
+}
+
+.g-cards-featured{
+    padding:30PX 20PX 0PX 20px;
+    flex-direction: column;
+} 
+
+.LearnPress{
+    padding:70px 0px 0px 0px;
+    
+    .bacground-learnpress{
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./../images/bac-mobil.png);
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+}
+
+.group-card-counter{
+    padding:70px 20px 0px 20px ;
+}
+
+.grow-us{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.academy-lms{
+    padding: 70px 0px 0px 0px;
+    .bacground-academy{
+        border-radius: 0px;
+        height: 400px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-items: center;
+        gap: 20px;
+        .student{
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons{
+            flex-direction: column;
+            align-items: center;
+        }
+            
+    }
+}
+
+footer{
+    margin-top: 0px;
+    padding: 50px 0px 0px 0px;
+
+}
+
+.upper{
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 0px 0px 20px;
+}
+
+.end-footar{
+    padding: 30px 20px 30px 20px;
+    text-align: center;
+}
+/* ========================================= page-courses=========================================  */
+.hero-courses{
+    padding: 18px 20px 18px 20px;
+    i{ padding:12px;
+    }
+}
+.Featured-page-courses{
+    .top-section-courses{
+        .input{
+            max-width: 200px;
+        }
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+.Featured-page-articl{
+    .g-cards-featured{
+        .card-featured{
+            .contain{
+                .details{
+                    .i{
+                        padding-top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ========================================= page-contact=========================================  */
+.page-Contact{
+    padding: 0px 0px 0px 0px;
+    .container-contact{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .container-left{
+        padding: 50px 20px;
+        p{
+            padding-top: 0px;
+        }
+    }
+    .container-right{
+        padding:0px 0px 0px 0px;
+        max-width: 100vw;
+        .map{
+            width: 100%;
+            border-radius:0PX;
+            }
+    }
+}
+.inputs-contact{
+    padding: 70px 20px;
+    .g-inputs-contact{
+        .input-email-name{
+            flex-direction: column;
+        }
+    }
+    .input{
+        width: 90vw!important;
+    }
+}
+/* ========================================= page-login/regester=========================================  */
+
+.g-inputs-login-Register{
+    padding: 50px 20px;
+    flex-direction: column;
+    .input-left{
+        width:calc( 100vw - 40px);
+    }
+    .input-right{
+        width:calc( 100vw - 40px);
+    }
+
+}
+/* ========================================= page-faqs=========================================  */
+.faqs-page{
+    padding: 56px 20px;
+    .g-boxes-faqs{
+        flex-direction: column;
+    }
+    .boxes-left{
+        width:calc( 100vw - 40px);
+    }
+    .boxes-right{
+        width: calc( 100vw - 40px);
+    }
+}
+.img-FAQs{
+    display: none;
+}
+.img-faqs-mobil{
+    display: block;
+    padding: 50px 20px 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width :576px)
+{
+.hero{
+    padding: 0PX 20PX 0PX 20PX;
+    text-align: center;
+}
+.grow-us{
+    padding:0px 20px 20px 20px;
+
+}
+}
